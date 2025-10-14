@@ -26,13 +26,12 @@
         android:id="@+id/edit_text_email"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="32dp"
         android:autofillHints=""
         android:backgroundTint="#000000"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_login_title" />
 
@@ -40,13 +39,12 @@
         android:id="@+id/edit_text_password"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="32dp"
         android:autofillHints=""
         android:backgroundTint="#050607"
         android:hint="@string/senha"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_text_email" />
 
@@ -54,7 +52,7 @@
         android:id="@+id/button_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="32dp"
         android:background="@color/white"
         android:backgroundTint="@color/black"
         android:soundEffectsEnabled="true"
@@ -63,17 +61,15 @@
         android:textColorLink="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_text_password" />
 
     <TextView
         android:id="@+id/registerLink"
-        android:layout_width="463dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="1692dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:background="#000000"
-        android:backgroundTint="@color/black"
         android:clickable="true"
         android:focusable="true"
         android:text="@string/cadastre_se"
@@ -81,7 +77,6 @@
         android:textColorLink="#FAF9FB"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_login" />
 
@@ -89,7 +84,7 @@
         android:id="@+id/btnGoogleSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="@string/login_com_google"
         app:layout_constraintTop_toBottomOf="@id/registerLink"
         app:layout_constraintStart_toStartOf="parent"

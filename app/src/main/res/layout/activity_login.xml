@@ -52,8 +52,8 @@
 
     <Button
         android:id="@+id/button_login"
-        android:layout_width="101dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
         android:layout_marginTop="28dp"
         android:background="@color/white"
         android:backgroundTint="@color/black"
@@ -79,11 +79,8 @@
         android:textColorLink="#FAF9FB"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="432dp" />
-
-    <<<<<<< HEAD
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_login" />
+        tools:layout_editor_absoluteY="432dp"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btnGoogleSignIn"
@@ -96,19 +93,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerLink"
         tools:ignore="MissingConstraints" />
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
-        android:layout_marginTop="16dp"/>
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/btnGoogleSignIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Login com Google"
-        app:layout_constraintTop_toBottomOf="@id/registerLink"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> upstream/feature-update-user

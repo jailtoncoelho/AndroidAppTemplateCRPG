@@ -133,7 +133,7 @@ class DashboardFragment : Fragment() {
                 val recordTreino = recordTreinoEditText.text.toString().trim()
                 val obsTreino = obsTreinoEditText.text.toString().trim()
 
-                val item = Item( base64Image, endereco, tipoTreino, dataTreino, recordTreino, obsTreino)
+                val item = Item( endereco,base64Image,  null, tipoTreino, dataTreino, obsTreino, recordTreino)
 
                 saveItemIntoDatabase(item)
             }
@@ -155,7 +155,7 @@ class DashboardFragment : Fragment() {
     private fun saveItemIntoDatabase(item: Item) {
         //TODO("Altere a raiz que sera criada no seu banco de dados do realtime database.
         // Renomeie a raiz itens")
-        databaseReference = FirebaseDatabase.getInstance().getReference("itens")
+        databaseReference = FirebaseDatabase.getInstance().getReference("treinos")
 
         // Cria uma chave unica para o novo item
         val itemId = databaseReference.push().key

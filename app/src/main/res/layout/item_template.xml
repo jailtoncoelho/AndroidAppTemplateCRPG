@@ -3,43 +3,75 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#7B2CF5"> <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:padding="8dp">
 
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/white"
+        android:src="@android:drawable/gallery_thumb"
+        />
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:layout_weight="1"
+        android:paddingStart="4dp">
 
-        <ImageView
-            android:id="@+id/item_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:scaleType="centerCrop"
-            android:layout_marginEnd="8dp" />
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/item_endereco"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:text="Endereço: [Local do Treino]"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
 
-            <TextView
-                android:id="@+id/item_endereco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Endereço:"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tipoTreinoEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo do Treino: [Tipo]"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
 
-            <!-- Campos futuros aqui -->
-        </LinearLayout>
-    </LinearLayout>
+        <TextView
+            android:id="@+id/dataTreinoEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data do Treino: [DD/MM/AAAA]"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/recordTreinoEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record: [Marca]"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/obsTreinoEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observações: [Texto da Observação]"
+            android:textSize="14sp"
+            android:textColor="#CCCCCC" /> </LinearLayout>
+</LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#CCCCCC"
-        android:layout_marginTop="8dp"
+        android:layout_height="2dp"
+        android:background="@android:color/black" android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"/>
 </LinearLayout>

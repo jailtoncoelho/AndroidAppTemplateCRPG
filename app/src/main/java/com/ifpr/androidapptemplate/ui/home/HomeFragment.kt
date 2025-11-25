@@ -84,7 +84,7 @@ class HomeFragment : Fragment() {
                         enderecoView.text = "Endereço: ${item.endereco ?: "Não informado"}"
                         tipoTreino.text = "Tipo de Treino: ${item.tipoTreinoEditText ?: "Não informado"}"
                         dataTreino.text = "Data do Treino: ${item.dataTreinoEditText ?: "Não informado"}"
-                        recordTreino.text = "Record/Marca: ${item.tipoTreinoEditText ?: "Não informado"}"
+                        recordTreino.text = "Record/Marca: ${item.recordTreinoEditText ?: "Não informado"}"
                         obsTreino.text = "Observações: ${item.obsTreinoEditText ?: "Não informado"}"
 
 

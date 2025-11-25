@@ -3,4 +3,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- Home -->
+    <string name="welcome_home">Seja bem vindo ao aplicativo </string>
 </resources>

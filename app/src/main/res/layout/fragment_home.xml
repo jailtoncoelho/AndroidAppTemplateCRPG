@@ -41,6 +41,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -71,6 +72,9 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:visibility="gone"
+=======
+        android:textSize="20sp"
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

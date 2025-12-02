@@ -1,13 +1,11 @@
 package com.ifpr.androidapptemplate.ui.login
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.SignInButton
@@ -19,8 +17,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.ifpr.androidapptemplate.MainActivity
+=======
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
 import com.ifpr.androidapptemplate.R
-import com.ifpr.androidapptemplate.ui.usuario.CadastroUsuarioActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -28,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var passwordEditText: EditText
     private lateinit var loginButton: Button
     private lateinit var registerLink: TextView
+<<<<<<< HEAD
     private lateinit var btnGoogleSignIn: SignInButton
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var firebaseAuth: FirebaseAuth
@@ -36,21 +36,19 @@ class LoginActivity : AppCompatActivity() {
         private const val RC_SIGN_IN = 9001
         private const val TAG = "signInWithEmail"
     }
+=======
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        FirebaseApp.initializeApp(this)
-
-        // Inicializa o Firebase Auth
-        firebaseAuth = FirebaseAuth.getInstance()
-
         emailEditText = findViewById(R.id.edit_text_email)
         passwordEditText = findViewById(R.id.edit_text_password)
         loginButton = findViewById(R.id.button_login)
         registerLink = findViewById(R.id.registerLink)
+<<<<<<< HEAD
         btnGoogleSignIn = findViewById<SignInButton>(R.id.btnGoogleSignIn)
 
         val registerLink: TextView = findViewById(R.id.registerLink)
@@ -109,6 +107,8 @@ class LoginActivity : AppCompatActivity() {
                 Toast.LENGTH_SHORT
             ).show()
         }
+=======
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
     }
 
     private fun signInGoogle() {

@@ -9,6 +9,7 @@ import android.widget.FrameLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+<<<<<<< HEAD
 import android.util.Base64
 import android.widget.*
 import android.graphics.BitmapFactory
@@ -24,6 +25,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.ifpr.androidapptemplate.ui.ai.AiLogicActivity
 import com.ifpr.androidapptemplate.ui.ai.AiLogicFragment
 import com.ifpr.androidapptemplate.R
+=======
+import androidx.lifecycle.ViewModelProvider
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
 import com.ifpr.androidapptemplate.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -39,8 +43,10 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        val homeViewModel =
+            ViewModelProvider(this).get(HomeViewModel::class.java)
 
+<<<<<<< HEAD
         val container = view.findViewById<LinearLayout>(R.id.itemContainer)
         carregarItensMarketplace(container)
 
@@ -53,6 +59,16 @@ class HomeFragment : Fragment() {
         }
 
         return view
+=======
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        val textView: TextView = binding.textHome
+        homeViewModel.text.observe(viewLifecycleOwner) {
+            textView.text = it
+        }
+        return root
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
     }
 
     override fun onDestroyView() {

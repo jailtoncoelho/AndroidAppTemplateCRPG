@@ -25,9 +25,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
+<<<<<<< HEAD
         <activity android:name=".ui.usuario.CadastroUsuarioActivity" />
         <activity android:name=".ui.ai.AiLogicActivity" />
 
+=======
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
     </application>
 
 </manifest>

@@ -3,8 +3,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+<<<<<<< HEAD
 
     <!-- Home -->
     <string name="welcome_home">Seja bem vindo ao aplicativo </string>
     <string name="title_itens">Itens</string>
+=======
+>>>>>>> parent of 3c0b3ad (Merge remote-tracking branch 'upstream/feature-login' into feature-login-layout)
 </resources>

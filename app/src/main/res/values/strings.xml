@@ -3,4 +3,13 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <!-- Home -->
+    <string name="welcome_home">Seja bem vindo ao aplicativo </string>
+    <string name="login_com_google">Login com Google</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="login_de_usu_rio">Login de Usuário</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
 </resources>
